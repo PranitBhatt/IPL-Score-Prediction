@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 export default function Register() {
- 
+    const [username,setUsername] = useState("");
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
+    const [confirmpassword , setCofirmPassword] = useState("");
+
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
             <div className="w-full max-w-md p-8 bg-white rounded-2xl shadow-lg">
