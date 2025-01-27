@@ -1,17 +1,13 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
+
 
 export default function Register() {
-    const useNavigate = useNavigate();
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        useNavigate('/Home');
-    }
+ 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
             <div className="w-full max-w-md p-8 bg-white rounded-2xl shadow-lg">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Register</h1>
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form className="space-y-4">
                     <div className="form-group">
                         <label className="block text-lg font-medium text-gray-700" htmlFor="username">Username</label>
                         <input 
@@ -77,10 +73,10 @@ export default function Register() {
                     </div>
                 </form>
 
-                {/* <p className="mt-4 text-sm text-center text-gray-600">
+                <p className="mt-4 text-sm text-center text-gray-600">
                     Already have an account?
                     <a className="ml-1 text-blue-500 hover:underline" href="/login">Sign In</a>
-                </p> */}
+                </p>
             </div>
         </div>
     );
