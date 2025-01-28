@@ -5,7 +5,40 @@ export default function Register() {
     const [username,setUsername] = useState("");
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
-    const [confirmpassword , setCofirmPassword] = useState("");
+    const [confirmpassword , setConfirmPassword] = useState("");
+
+    const [submitted,setSubmitted] = useState(false);
+    const [error,setError] = useState(false);
+
+    const handleName = (e) => {
+        setUsername(e.target.value);
+        setSubmitted(false);
+    };
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+        setSubmitted(false);
+    };
+
+    const handlePassword = (e) => {
+        setPassword(e.target.value);
+        setSubmitted(false);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(username === "" || email === "" || password === "" || confirmpassword === ""){
+            setError(true);
+        }
+        else
+        {
+            setError(false);
+            setSubmitted(true);
+        }
+    };
+
+    
+
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
@@ -15,6 +48,7 @@ export default function Register() {
                     <div className="form-group">
                         <label className="block text-lg font-medium text-gray-700" htmlFor="username">Username</label>
                         <input 
+                            onChange={handleName}
                             id="username" 
                             name="username" 
                             className="w-full px-4 py-2 text-gray-700 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
@@ -29,6 +63,7 @@ export default function Register() {
                     <div className="form-group">
                         <label className="block text-lg font-medium text-gray-700" htmlFor="email">Email</label>
                         <input 
+                            onChange={handleEmail}
                             id="email" 
                             name="email" 
                             className="w-full px-4 py-2 text-gray-700 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
@@ -43,6 +78,7 @@ export default function Register() {
                     <div className="form-group">
                         <label className="block text-lg font-medium text-gray-700" htmlFor="password">Password</label>
                         <input 
+                            onChange={handlePassword}
                             id="password" 
                             name="password" 
                             className="w-full px-4 py-2 text-gray-700 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
@@ -70,6 +106,7 @@ export default function Register() {
 
                     <div className="form-group">
                         <button 
+                            onChange={handleSubmit}
                             type="submit" 
                             className="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                             Submit
