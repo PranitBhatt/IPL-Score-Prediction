@@ -24,6 +24,10 @@ export default function Register() {
         setPassword(e.target.value);
         setSubmitted(false);
     };
+    const handleConfirmPassword = (e) => {
+        setConfirmPassword(e.target.value);
+        setSubmitted(false);
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -37,7 +41,7 @@ export default function Register() {
         }
     };
 
-    
+
 
 
     return (
@@ -93,6 +97,7 @@ export default function Register() {
                     <div className="form-group">
                         <label className="block text-lg font-medium text-gray-700" htmlFor="confirm_password">Confirm Password</label>
                         <input 
+                            onChange={handleConfirmPassword}
                             id="confirm_password" 
                             name="confirm_password" 
                             className="w-full px-4 py-2 text-gray-700 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
