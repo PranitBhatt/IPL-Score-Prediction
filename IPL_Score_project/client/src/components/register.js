@@ -41,7 +41,32 @@ export default function Register() {
         }
     };
 
+    const successMessage = () => {
+        return (
+            <div
+                className="success"
+                style={{
+                    display: submitted ? "" : "none",
+                }}
+            >
+                <h1>User {name} successfully registered!!</h1>
+            </div>
+        );
+    };
 
+    // Showing error message if error is true
+    const errorMessage = () => {
+        return (
+            <div
+                className="error"
+                style={{
+                    display: error ? "" : "none",
+                }}
+            >
+                <h1>Please enter all the fields</h1>
+            </div>
+        );
+    };
 
 
     return (
