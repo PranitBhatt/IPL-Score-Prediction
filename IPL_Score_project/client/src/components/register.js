@@ -73,6 +73,10 @@ export default function Register() {
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
             <div className="w-full max-w-md p-8 bg-white rounded-2xl shadow-lg">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Register</h1>
+                <div className="messages">
+                {errorMessage()}
+                {successMessage()}
+            </div>
                 <form className="space-y-4">
                     <div className="form-group">
                         <label className="block text-lg font-medium text-gray-700" htmlFor="username">Username</label>
