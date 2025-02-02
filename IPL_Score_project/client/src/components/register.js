@@ -63,7 +63,7 @@ export default function Register() {
                     display: error ? "" : "none",
                 }}
             >
-                <h1>Please enter all the fields</h1>
+                <h1>Please enter all the fields correctl </h1>
             </div>
         );
     };
