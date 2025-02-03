@@ -10,7 +10,7 @@ model = pickle.load(open(filename,'rb'))
 
 @app.route("/members")
 def members():
-    return {"members" : ["Members 1","Member 2","Members 3"]}
+    return {"members" : ["Members 1","Member 2","Members 3", "Member 4"]}
 
 if __name__ =="__main__":
     app.run(debug=True)
