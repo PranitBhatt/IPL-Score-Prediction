@@ -1,6 +1,8 @@
 // import { useEffect, useState } from "react"
 import React  from 'react'
 import Register from "./components/register"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/home'
 
 export default function App() {
   // const [data, setData] = useState([{}])
@@ -13,7 +15,14 @@ export default function App() {
   //     })
   // }, [])
   return (
-    
-   <Register />
+  
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
+//<Home />
+  //  <Register />
   )
 }

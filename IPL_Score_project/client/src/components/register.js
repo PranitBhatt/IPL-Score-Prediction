@@ -49,7 +49,7 @@ export default function Register() {
                     display: submitted ? "" : "none",
                 }}
             >
-                <h1>User {name} successfully registered!!</h1>
+                <h1>User {username} successfully registered!!</h1>
             </div>
         );
     };
