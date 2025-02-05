@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Left side slideshow */}
-      <div className="absolute top-[10%] left-[10%] w-1/4 w-36 h-36">
+      <div className="absolute top-[10%] left-[10%] w-1/4 w-70 h-70">
         {teams.map((team, index) => {
           return (
             <img
@@ -59,7 +59,7 @@ const Home = () => {
       </div>
 
       {/* Right side slideshow */}
-      <div className="absolute top-[10%] left-[70%] w-1/4  w-36 h-36">
+      <div className="absolute top-[10%] left-[70%] w-1/4  w-70 h-70">
         {teams.map((team, index) => (
           <img
             key={`right-${team.name}`}
@@ -76,7 +76,7 @@ const Home = () => {
         to="/register"
         className="absolute top-[24%] left-[47%] transform -translate-x-1/2 -translate-y-1/2"
       >
-        <button className="w-[150px] text-xl px-5 py-5 rounded-lg border-2 border-yellow-400 hover:bg-red-500 hover:text-white transition-colors duration-300">
+        <button className="w-[150px] text-xl px-5 py-5 rounded-lg border-2 border-yellow-400 hover:bg-green-500 hover:text-white transition-colors duration-300">
           Join Us!
         </button>
       </Link>
