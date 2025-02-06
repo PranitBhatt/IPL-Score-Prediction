@@ -3,8 +3,11 @@ import React, { useState } from 'react'
 
 export default function Register() {
     const [username,setUsername] = useState("");
+    
     const [email,setEmail] = useState("");
+
     const [password,setPassword] = useState("");
+
     const [confirmpassword , setConfirmPassword] = useState("");
 
     const [submitted,setSubmitted] = useState(false);
