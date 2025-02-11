@@ -3,7 +3,8 @@ import React  from 'react'
 import Register from "./components/register"
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/home'
-import login from './components/login'
+import Login from './components/login'
+import Layout from './components/layout';
 
 export default function App() {
   // const [data, setData] = useState([{}])
@@ -20,8 +21,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/login" element={<login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
+        <Route path="/layout" element={<Layout />} />
         <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>

@@ -1,32 +1,32 @@
 import React from 'react'
-
-export default function layout() {
+// import logo from "../assets/images.jpg"
+export default function Layout() {
   return (
     <div className="min-h-screen bg-[#0d2040] font-verdana text-white">
       {/* Navigation Bar */}
       <div className="container mx-auto">
         <div className="flex justify-between items-center py-4">
           <img
-            src="/static/images.png" // Replace with your image path
+            src='../assets/images.jpg' // Replace with your image path
             alt="Cricket Logo"
             className="h-16 w-16 rounded-full"
           />
           <ul className="flex space-x-4">
-            {title !== 'Login' && (
+            {'Login' === 'Login' && (
               <li>
                 <a href="/login" className="px-4 py-2 text-white hover:text-red-500 hover:bg-black">
                   Login
                 </a>
               </li>
             )}
-            {title !== 'Register' && (
+            {'Register' === 'Register' && (
               <li>
                 <a href="/register" className="px-4 py-2 text-white hover:text-red-500 hover:bg-black">
                   Register
                 </a>
               </li>
             )}
-            {title !== 'Home' && (
+            {'Home' !== 'Home' && (
               <li>
                 <a href="/home" className="px-4 py-2 text-white hover:text-red-500 hover:bg-black">
                   Home
@@ -38,7 +38,7 @@ export default function layout() {
       </div>
 
       {/* Flashed Messages */}
-      <div className="container mx-auto mt-8">
+      {/* <div className="container mx-auto mt-8">
         {messages &&
           messages.map((message, index) => (
             <div
@@ -48,13 +48,13 @@ export default function layout() {
               {message.text}
             </div>
           ))}
-      </div>
+      </div> */}
 
       {/* Main Content */}
-      <div className="container mx-auto mt-8">
+      {/* <div className="container mx-auto mt-8"> */}
         {/* This is where the main content will be injected */}
-        {children}
-      </div>
+        {/* {children} */}
+      {/* </div> */}
     </div>
   );
 };

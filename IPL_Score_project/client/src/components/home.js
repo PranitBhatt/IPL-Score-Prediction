@@ -40,6 +40,7 @@ const Home = () => {
   }, [teams.length]);
 
   return (
+    // Home page layout
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Left side slideshow */}
       <div className="absolute top-[10%] left-[10%] w-1/4 w-70 h-70">
