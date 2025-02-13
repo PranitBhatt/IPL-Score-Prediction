@@ -52,7 +52,7 @@ export default function Layout() {
 
       {/* Main Content */}
       <div className="container mx-auto mt-8">
-        {/* This is where the main content will be injected */}
+        This is where the main content will be injected
         {children}
       </div>
     </div>
