@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Layout() {
+export default function Layout({title, messages, children}) {
   return (
     <div className="min-h-screen bg-[#0d2040] font-verdana text-white">
       {/* Navigation Bar */}
