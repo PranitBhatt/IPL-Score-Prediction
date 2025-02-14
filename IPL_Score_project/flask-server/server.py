@@ -8,9 +8,9 @@ CORS(app)
 filename = 'IPL_Score_prediction.pkl'
 model = pickle.load(open(filename,'rb'))
 
-@app.route("/members")
+@app.route("/login")
 def members():
-    return {"members" : ["Members 1","Member 2","Members 3", "Member 4"]}
+    return 
 
 if __name__ =="__main__":
     app.run(debug=True)

@@ -36,35 +36,35 @@ export default function ScorePredictor() {
               </select>
     
               <input
-                type="text"
+                type="number"
                 name="overs"
                 placeholder="Overs (>= 5.0) eg. 7.2"
                 className="form-input block w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white"
               />
     
               <input
-                type="text"
+                type="number"
                 name="runs"
                 placeholder="Runs eg. 64"
                 className="form-input block w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white"
               />
     
               <input
-                type="text"
+                type="number"
                 name="wickets"
                 placeholder="Wickets eg. 4"
                 className="form-input block w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white"
               />
     
               <input
-                type="text"
+                type="number"
                 name="runs_in_prev_5"
                 placeholder="Runs scored in previous 5 Overs eg. 42"
                 className="form-input block w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white"
               />
     
               <input
-                type="text"
+                type="number"
                 name="wickets_in_prev_5"
                 placeholder="Wickets taken in previous 5 Overs eg. 3"
                 className="form-input block w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white"
