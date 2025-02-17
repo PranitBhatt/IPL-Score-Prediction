@@ -73,16 +73,16 @@ export default function Register() {
 
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600">
-            <div className="w-full max-w-md p-8 bg-white rounded-2xl shadow-lg">
-                <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Register</h1>
+        <div className="flex items-center justify-center min-h-screen bg-gray-900">
+            <div className="w-full max-w-md p-8 bg-gray-800 rounded-2xl shadow-lg">
+                {/* <h1 className="text-3xl font-bold text-center text-white mb-6">Register</h1> */}
                 <div className="messages">
                 {errorMessage()}
                 {successMessage()}
             </div>
                 <form className="space-y-4">
                     <div className="form-group">
-                        <label className="block text-lg font-medium text-gray-700" htmlFor="username">Username</label>
+                        <label className="block text-lg font-medium text-white" htmlFor="username">Username</label>
                         <input 
                             onChange={handleName}
                             id="username" 
@@ -97,7 +97,7 @@ export default function Register() {
                     </div>
 
                     <div className="form-group">
-                        <label className="block text-lg font-medium text-gray-700" htmlFor="email">Email</label>
+                        <label className="block text-lg font-medium text-white" htmlFor="email">Email</label>
                         <input 
                             onChange={handleEmail}
                             id="email" 
@@ -112,7 +112,7 @@ export default function Register() {
                     </div>
 
                     <div className="form-group">
-                        <label className="block text-lg font-medium text-gray-700" htmlFor="password">Password</label>
+                        <label className="block text-lg font-medium text-white" htmlFor="password">Password</label>
                         <input 
                             onChange={handlePassword}
                             id="password" 
@@ -127,7 +127,7 @@ export default function Register() {
                     </div>
 
                     <div className="form-group">
-                        <label className="block text-lg font-medium text-gray-700" htmlFor="confirm_password">Confirm Password</label>
+                        <label className="block text-lg font-medium text-white" htmlFor="confirm_password">Confirm Password</label>
                         <input 
                             onChange={handleConfirmPassword}
                             id="confirm_password" 
@@ -151,7 +151,7 @@ export default function Register() {
                     </div>
                 </form>
 
-                <p className="mt-4 text-sm text-center text-gray-600">
+                <p className="mt-4 text-sm text-center text-white">
                     Already have an account?
                     <a className="ml-1 text-blue-500 hover:underline" href="/login">Sign In</a>
                 </p>
